@@ -1,15 +1,15 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class FirstTask {
-    int a;
-    int b;
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число а");
+        int a = scanner.nextInt();
+        System.out.println("Введите число b");
+        int b = scanner.nextInt();
 
-    public FirstTask(int a, int b) {
-        this.a = a;
-        this.b = b;
-    }
-
-    public void сomparisonNumbers() {
         if(a < b) {
             System.out.println(a + " < " + b);
         } else if(a > b) {
@@ -17,12 +17,10 @@ public class FirstTask {
         } else {
             System.out.println(a + " = " + b);
         }
-    }
 
-    public void arithmeticOperations() {
-        System.out.println(a + b);
-        System.out.println(a - b);
-        System.out.println(a * b);
-        System.out.println(a / b);
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b));
+        System.out.println("a * b = " + (a * b));
+        System.out.println("a / b = " + (a / b));
     }
 }
