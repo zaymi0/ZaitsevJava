@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class SecondTask {
@@ -10,7 +11,7 @@ public class SecondTask {
         System.out.println("Введите вторую строку");
         String secondLine = scanner.nextLine();
 
-        if (firstLine.equals(secondLine)) {
+        if (Objects.equals(firstLine, secondLine)) {
             System.out.println("строки идентичны");
         } else {
             System.out.println("строки не идентичны");
